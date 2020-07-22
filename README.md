@@ -1,6 +1,6 @@
 Backend:
 
-	go to path: service/host , then open cli and put "php -S localhost:---- -t public"
+	go to path: service/host , then open terminal and put "php -S localhost:---- -t public"
 	Authentication service port localhost:8000
 	service port localhost:8001
 	Group service port localhost:8002
