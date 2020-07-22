@@ -1,0 +1,30 @@
+<?php
+
+namespace Domain\entities;
+
+use Core\myvendor\defaults\uuid\Uuid;
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    use Uuid;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
+
+    protected $hidden = [
+        'password', 'ipRestriction', 'deviceRestriction',
+    ];
+
+    /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+
+    protected $connection = 'USR';
+}

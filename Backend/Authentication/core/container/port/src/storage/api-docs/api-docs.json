@@ -1,0 +1,113 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "L5 OpenApi",
+        "description": "L5 Swagger OpenApi description",
+        "contact": {
+            "email": "darius@matulionis.lt"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/swagger/register": {
+            "post": {
+                "tags": [
+                    "Swagger"
+                ],
+                "summary": "Adds a new swagger method",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "uri": {
+                                        "type": "string"
+                                    },
+                                    "fileName": {
+                                        "type": "string"
+                                    },
+                                    "method": {
+                                        "type": "string"
+                                    },
+                                    "summary": {
+                                        "type": "string"
+                                    },
+                                    "tag": {
+                                        "type": "string"
+                                    },
+                                    "property": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "uri": "string",
+                                    "fileName": "string",
+                                    "method": "Post",
+                                    "summary": "string",
+                                    "tag": "string",
+                                    "property": [
+                                        {
+                                            "name": "string",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "string",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "name": "string",
+                                            "type": "string"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "string": {
+            "post": {
+                "tags": [
+                    "string"
+                ],
+                "summary": "string",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "alkoa": {
+                                        "type": "string"
+                                    },
+                                    "alkoo": {
+                                        "type": "string"
+                                    },
+                                    "alko": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

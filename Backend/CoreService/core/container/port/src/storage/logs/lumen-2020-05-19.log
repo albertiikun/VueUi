@@ -1,0 +1,58 @@
+[2020-05-19 22:55:08] local.ERROR: ErrorException: array_keys() expects parameter 1 to be array, null given in C:\laragon\www\CoreService\core\myvendor\functions\swagger\SwaggerFactory.php:26
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(2, 'array_keys() ex...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\CoreService\core\myvendor\functions\swagger\SwaggerFactory.php(26): array_keys(NULL)
+#2 C:\laragon\www\CoreService\core\myvendor\commands\AutoSwagger.php(141): Core\myvendor\functions\swagger\SwaggerFactory->Handler(NULL, Array, 404, Object(Core\myvendor\commands\AutoSwagger))
+#3 C:\laragon\www\CoreService\core\myvendor\commands\AutoSwagger.php(105): Core\myvendor\commands\AutoSwagger->SendDataToHandler(NULL, Array, 404)
+#4 C:\laragon\www\CoreService\core\myvendor\commands\AutoSwagger.php(67): Core\myvendor\commands\AutoSwagger->PrepareData(Array, Object(Core\myvendor\defaults\application\MyApplication))
+#5 C:\laragon\www\CoreService\core\myvendor\commands\AutoSwagger.php(38): Core\myvendor\commands\AutoSwagger->getRoutes(Object(Core\myvendor\defaults\application\MyApplication))
+#6 [internal function]: Core\myvendor\commands\AutoSwagger->handle()
+#7 C:\laragon\www\CoreService\core\vendor\illuminate\container\BoundMethod.php(32): call_user_func_array(Array, Array)
+#8 C:\laragon\www\CoreService\core\vendor\illuminate\container\Util.php(36): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#9 C:\laragon\www\CoreService\core\vendor\illuminate\container\BoundMethod.php(90): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#10 C:\laragon\www\CoreService\core\vendor\illuminate\container\BoundMethod.php(34): Illuminate\Container\BoundMethod::callBoundMethod(Object(Core\myvendor\defaults\application\MyApplication), Array, Object(Closure))
+#11 C:\laragon\www\CoreService\core\vendor\illuminate\container\Container.php(590): Illuminate\Container\BoundMethod::call(Object(Core\myvendor\defaults\application\MyApplication), Array, Array, NULL)
+#12 C:\laragon\www\CoreService\core\vendor\illuminate\console\Command.php(201): Illuminate\Container\Container->call(Array)
+#13 C:\laragon\www\CoreService\core\vendor\symfony\console\Command\Command.php(255): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#14 C:\laragon\www\CoreService\core\vendor\illuminate\console\Command.php(188): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#15 C:\laragon\www\CoreService\core\vendor\symfony\console\Application.php(1012): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\laragon\www\CoreService\core\vendor\symfony\console\Application.php(272): Symfony\Component\Console\Application->doRunCommand(Object(Core\myvendor\commands\AutoSwagger), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\laragon\www\CoreService\core\vendor\symfony\console\Application.php(148): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\laragon\www\CoreService\core\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\laragon\www\CoreService\core\vendor\laravel\lumen-framework\src\Console\Kernel.php(115): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\laragon\www\CoreService\core\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main} {"exception":"[object] (ErrorException(code: 0): array_keys() expects parameter 1 to be array, null given at C:\\laragon\\www\\CoreService\\core\\myvendor\\functions\\swagger\\SwaggerFactory.php:26)
+[stacktrace]
+#0 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(2, 'array_keys() ex...', 'C:\\\\laragon\\\\www\\\\...', 26, Array)
+#1 C:\\laragon\\www\\CoreService\\core\\myvendor\\functions\\swagger\\SwaggerFactory.php(26): array_keys(NULL)
+#2 C:\\laragon\\www\\CoreService\\core\\myvendor\\commands\\AutoSwagger.php(141): Core\\myvendor\\functions\\swagger\\SwaggerFactory->Handler(NULL, Array, 404, Object(Core\\myvendor\\commands\\AutoSwagger))
+#3 C:\\laragon\\www\\CoreService\\core\\myvendor\\commands\\AutoSwagger.php(105): Core\\myvendor\\commands\\AutoSwagger->SendDataToHandler(NULL, Array, 404)
+#4 C:\\laragon\\www\\CoreService\\core\\myvendor\\commands\\AutoSwagger.php(67): Core\\myvendor\\commands\\AutoSwagger->PrepareData(Array, Object(Core\\myvendor\\defaults\\application\\MyApplication))
+#5 C:\\laragon\\www\\CoreService\\core\\myvendor\\commands\\AutoSwagger.php(38): Core\\myvendor\\commands\\AutoSwagger->getRoutes(Object(Core\\myvendor\\defaults\\application\\MyApplication))
+#6 [internal function]: Core\\myvendor\\commands\\AutoSwagger->handle()
+#7 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#8 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\container\\Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\container\\BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Core\\myvendor\\defaults\\application\\MyApplication), Array, Object(Closure))
+#11 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\container\\Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Core\\myvendor\\defaults\\application\\MyApplication), Array, Array, NULL)
+#12 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\console\\Command.php(201): Illuminate\\Container\\Container->call(Array)
+#13 C:\\laragon\\www\\CoreService\\core\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\console\\Command.php(188): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\laragon\\www\\CoreService\\core\\vendor\\symfony\\console\\Application.php(1012): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\laragon\\www\\CoreService\\core\\vendor\\symfony\\console\\Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Core\\myvendor\\commands\\AutoSwagger), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\laragon\\www\\CoreService\\core\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\laragon\\www\\CoreService\\core\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\laragon\\www\\CoreService\\core\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(115): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\laragon\\www\\CoreService\\core\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
+[2020-05-19 23:16:05] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Trait 'Persistence\database\seeds\base\Event' not found in C:\laragon\www\CoreService\persistence\database\seeds\base\Base.php:7
+Stack trace:
+#0 C:\laragon\www\CoreService\core\vendor\laravel\lumen-framework\src\Concerns\RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main} {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 1): Trait 'Persistence\\database\\seeds\\base\\Event' not found at C:\\laragon\\www\\CoreService\\persistence\\database\\seeds\\base\\Base.php:7)
+[stacktrace]
+#0 C:\\laragon\\www\\CoreService\\core\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RegistersExceptionHandlers.php(54): Laravel\\Lumen\\Application->handleShutdown()
+#1 [internal function]: Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}()
+#2 {main}
+"} 
